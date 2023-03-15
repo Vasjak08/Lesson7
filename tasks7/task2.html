@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Lesson_7</title>
+   <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+   <h2>Задача2</h2>
+   <script>
+
+      const userNumberDay = parseInt(prompt('Ведіть день тиждня'))
+      function isWorkingDay(numberDay) {
+         return numberDay >= 1 && numberDay <= 5
+      }
+
+
+      const resultMessage = isWorkingDay(userNumberDay) ? 'День робочий' : 'Вихідний день'
+      document.write(resultMessage)
+
+
+
+   </script>
+
+</body>
+
+
+</html>

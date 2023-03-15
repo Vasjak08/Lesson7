@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Lesson_7</title>
+   <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+   <h2>Задача6</h2>
+   <script>
+
+      let userRows = parseInt(prompt('Ввідіть кількість рядків'))
+      let userColumns = parseInt(prompt('Ввідіть кількість стовпців'))
+
+      function getTable(rows, columns) {
+
+         document.write(`<table border=3px>`)
+         for (let i = 0; i < rows; i++) {
+            document.write(`<tr>`)
+
+            for (let c = 0; c < columns; c++) {
+               document.write(`<td style="width: 45px; height: 40px;background-color:DarkSeaGreen;"></td>`)
+
+            }
+            document.write(`</tr>`)
+
+
+         }
+         document.write(`</table>`)
+      }
+      let result = getTable(userRows, userColumns)
+
+
+
+
+   </script>
+</body>
+
+
+</html>

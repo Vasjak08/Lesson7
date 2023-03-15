@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Lesson_7</title>
+   <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+   <h2>Задача10</h2>
+   <script>
+      function getTemperatureAverageValue() {
+         let sumtemperaturePositive = 0
+         let temperatureQvantity = 0
+         for (let i = 0; i < arguments.length; i++) {
+            if (arguments[i] > 0) {
+               sumtemperaturePositive += arguments[i]
+               temperatureQvantity++
+            }
+
+         }
+         return sumtemperaturePositive / temperatureQvantity
+      }
+      let resultTemperature = getTemperatureAverageValue(5, -12, 23, -18, -14, 22)
+
+      document.write(`Середнє значення додатних показників= ${resultTemperature.toFixed(2)} `)
+
+   </script>
+</body>
+
+
+</html>

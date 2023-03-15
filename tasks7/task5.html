@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Lesson_7</title>
+   <link rel="stylesheet" href="/tasks5/css5/main5.css">
+</head>
+
+<body>
+   <h2 class="red">Задача5</h2>
+   <script>
+
+      function getCentimetersInches(inches) {
+         let resultInches = inches / 2.54
+         return resultInches
+      }
+
+      function getKilogramsPounds(pounds) {
+         let resultPounds = pounds * 2.205
+         return resultPounds
+      }
+
+      function getKilometersMiles(miles) {
+
+         let resultKilometrs = miles / 1.609
+         return resultKilometrs
+      }
+      const numberCentimetersInches = parseFloat(prompt('Вводимо кількість сантиметрів'))
+      const numberKilogramsPounds = parseFloat(prompt('Вводимо кількість кілограм'))
+      const numberKilometersMiles = parseFloat(prompt('Вводимо кількість кілометрів'))
+
+
+      const resultInches = getCentimetersInches(numberCentimetersInches)
+      const resultPounds = getKilogramsPounds(numberKilogramsPounds)
+      const resultKilometrs = getKilometersMiles(numberKilometersMiles)
+      document.write(`
+        Кількість дюймів-${resultInches.toFixed(2)}<br>
+       Кількість кілограм-${resultPounds.toFixed(2)}<br>
+       Кількість кілометрів-${resultKilometrs.toFixed(2)}
+        
+      `)
+
+
+   </script>
+
+</body>
+
+
+</html>

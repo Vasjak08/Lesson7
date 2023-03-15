@@ -1,0 +1,61 @@
+.class {
+   background-color: rgba(218, 206, 206, 0.603);
+   max-width: 800px;
+   margin: 0 auto;
+}
+
+h1 {
+   color: rgb(111, 47, 184);
+   font-size: 40px;
+   background-color: blanchedalmond;
+   padding: 20px;
+   font-weight: 800;
+   text-align: center;
+   text-transform: uppercase;
+   border: 2px solid rgb(145, 106, 106);
+}
+
+h2 {
+   color: aquamarine;
+   font-size: 40px;
+   background-color: blanchedalmond;
+
+}
+
+h3 {
+
+
+   max-width: 150px;
+   background-color: #edec14eb;
+   padding: 5px 10px;
+   font-size: 20px;
+   box-shadow: 4px 2px #8f8f2b;
+   letter-spacing: 3px;
+   border-radius: 10px;
+   text-align: center;
+   transition: 0.2s;
+}
+
+h3:hover {
+   background-color: rgb(126, 197, 32);
+}
+
+a:hover {
+   color: antiquewhite;
+
+}
+
+p {
+   background-color: bisque;
+}
+
+a {
+   text-decoration: none;
+   text-transform: uppercase;
+}
+
+.content-flex {
+   display: flex;
+   gap: 40px;
+   background-color: #8f8f2b;
+}

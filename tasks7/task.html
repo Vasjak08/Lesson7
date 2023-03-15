@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Lesson_7</title>
+   <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+   <h2>Задача0</h2>
+   <script>
+
+
+
+      const numbersMonth = parseInt(prompt('Введіть номер місяця?'))
+
+      function monthNumber(numbersMonth) {
+
+         let result
+         switch (numbersMonth) {
+            case 1:
+            case 2:
+            case 12:
+               result = 'Зимовий місяць.'
+               break;
+
+
+            case 3:
+            case 4:
+            case 5:
+               result = 'Весняний місяць.'
+               break;
+
+            case 6:
+            case 7:
+            case 8:
+               result = 'Літній місяць.'
+               break;
+
+            case 9:
+            case 10:
+            case 11:
+               result = 'Осінній місяць.'
+               break;
+
+            default:
+               result = 'Error'
+               break;
+
+         }
+         return result
+      }
+
+
+      const msg = monthNumber(numbersMonth)
+      document.write(msg)
+
+
+
+   </script>
+
+</body>
+
+
+</html>
